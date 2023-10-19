@@ -48,8 +48,10 @@ just build
 To start the project, run:
 
 ```shell
-just up
+just up --detach
 ```
+
+NB: running with `--detach` means that a Docker container runs in the background of the terminal. It does not receive input or display output. For more details on detach mode, see the [Docker docs](https://docs.docker.com/language/golang/run-containers/#run-in-detached-mode)
 
 Then point your browser to <http://localhost:8000> and start hacking!
 
